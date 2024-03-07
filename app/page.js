@@ -43,8 +43,9 @@ const Home = () => {
       <div className='flex flex-col xl:w-4/5'>
         <Project  
             title={"Depth Map AI | Python, TensorFlow"}
-            description={"Currently leading 4 team members in the development of a depth map model with a U-Net convolutional neural network using python. TensorFlow, Keras, Opencv, Matplotlib, and numPy. The  overall goal of the team is to use my depth map and a existing object classification network to apply computer vision functionality to a VEX competition robotics project. Our model achitecure uses Keras pretrained DenseNet201 for encoding and a custom decoder for decoding. The model is currently trained on the DIODE dataset, and and will soon be trained on both DIODE and a custom made dataset using a RealSense camera and a VEX demo field. We will be writing a paper on our work, creating a demo of its funcionality, and presenting it at CUCAI 2024. My most recent progress with the model is shown here."}
-            photoLink={"/model_results.png"}
+            description={"This AI is a custom-built depth map model overlaid with an existing object classification model named YOLO. The depth map model takes in a 2D image and predicts each pixel's distance from the camera. This was accomplished using a CNN U-Net architecture. The model is trained on two datasets of 3D images and their corresponding 2D images using approximately 8000 indoor images from the DIODE Dataset and 10,000 images from our custom-made dataset. Our custom dataset was created using a RealSense camera to gather image and depth map pairs inside a Vex robotics competition field. The purpose of this project is to apply computer vision capabilities to Vex competition robots. The YOLO model allows the robot to understand what objects are in its field of view, while the depth map model gives it context to how far away the objects are. This can be used to identify and act on game pieces in the field, and gather information about its location within the field. In this demo video you can see it opperating within a bedroom and living room."}
+            videoLink={"https://www.youtube.com/embed/LT3b4AtN6-o?si=-v9j311sKAYHZrmS"}
+            videoTitle={"Depth Map AI Demo"}
             gitHubLink = {"https://github.com/theol0403/QMIND-CV-Robot-Vision"}
         />
         <Project 
