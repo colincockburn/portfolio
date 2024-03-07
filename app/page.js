@@ -27,7 +27,7 @@ const Home = () => {
                 <p className='Exo pl-1'> 
                 I am a software developer currently pursuing a computer 
                 science degree with a focus in artificial intelligence at 
-                Queen's University. As I further my studies, I am currently on the lookout for internship opportunities to gain more practical experience and learn from the field.
+                Queen's University. I am currently completing my 4th year of studies and look forward to my Co-op with Ericsson starting in May.
                 </p>
               </div>
             </div>
