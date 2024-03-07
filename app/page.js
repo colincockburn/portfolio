@@ -69,11 +69,6 @@ const Home = () => {
           videoTitle={"Chess Engine Demo"}
           gitHubLink = {"https://github.com/colincockburn/Wordle-solver"}
         />
-          <Project 
-          title={"Airbnb Clone | python, SQLAlchemy"}
-          description={"I had the privilege of leading a collaborative team project that revolved around the development of a command-line interface (CLI) application using Python and SQLAlchemy. Our primary goal was to replicate the back-end functionality akin to that of Airbnb's platform. This encompassed an array of intricate features, including comprehensive user authentication, property listings, booking management, and database managment."}
-          gitHubLink = {"https://github.com/colincockburn/qbnb"}
-        />
       </div>
     </div>
   );
