@@ -8,7 +8,7 @@ const Home = () => {
     //root
     <div className='flex flex-col justify-center items-center bg-neutral-900 p-[3vw] '>
       {/* hero */}
-      <div className=" text-[#d4d4d4] font-medium h-[85vh] sm:h-screen w-full flex flex-col justify-between pb-[4vw]">
+      <div className=" text-[#d4d4d4] font-medium h-[85vh] sm:h-screen w-full flex flex-col justify-between pb-[4vw]  max-w-[1500px]">
         {/* Navbar */}
         <NavigationBar />
         
@@ -27,7 +27,7 @@ const Home = () => {
                 <p className='Exo pl-1'> 
                 I am a software developer currently pursuing a computer 
                 science degree with a focus in artificial intelligence at 
-                Queen's University. I am currently completing my 4th year of studies and look forward to my Co-op with Ericsson starting in May.
+                Queen's University. I recently finished a 16 month work term at Ericsson Ottawa where I contributied to two seperate teams as an Indoor radio Developer and an AI/ML Developer. I expect to graduate in December and am currently looking for work. please find my  
                 </p>
               </div>
             </div>
@@ -40,7 +40,7 @@ const Home = () => {
         </div>
       </div>
       {/* projects */}
-      <div className='flex flex-col xl:w-4/5'>
+      <div className='flex flex-col xl:w-4/5  max-w-[1200px]'>
         <Project  
             title={"Depth Map AI | Python, TensorFlow"}
             description={"This AI is a custom-built depth map model overlaid with an existing object classification model named YOLO. The depth map model takes in a 2D image and predicts each pixel's distance from the camera. This was accomplished using a CNN U-Net architecture. The model is trained on two datasets of 3D images and their corresponding 2D images using approximately 8000 indoor images from the DIODE Dataset and 10,000 images from our custom-made dataset. Our custom dataset was created using a RealSense camera to gather image and depth map pairs inside a Vex robotics competition field. The purpose of this project is to apply computer vision capabilities to Vex competition robots. The YOLO model allows the robot to understand what objects are in its field of view, while the depth map model gives it context to how far away the objects are. This can be used to identify and act on game pieces in the field, and gather information about its location within the field. In this demo video you can see it opperating within a bedroom and living room."}
