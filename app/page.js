@@ -43,7 +43,7 @@ const Home = () => {
       <div className='flex flex-col xl:w-4/5  max-w-[1200px]'>
         <Project  
             title={"Image Denoising Model | PyTorch"}
-            description={"This project was the development of a Convolutional Neural Network which denoises images using a U-Net architecture built with PyTorch. While this is not a niche project on its own, the purpose was to test the compression to performance trade offs of structured/unstructured pruning and quantization-aware-training. The project is currently underway as the compression techniques have not been implemented yet. Currently the main structure of the project is complete including the model, training, data loading, and evaluation. On the left you can see a couple visual outputs of the base model in action with a short training window."}
+            description={"This project was the development of a Convolutional Neural Network which denoises images using a U-Net architecture built with PyTorch. While this is not a niche project on its own, the purpose was to test the compression to performance trade offs of structured/unstructured pruning and quantization-aware-training. The project is currently underway as the compression techniques have not been implemented yet. Currently the main structure of the project is complete including the model, training, data loading, and evaluation. Here you can see a couple visual outputs of the base model in action with a short training window."}
             photoLink={"/denoise_example_2.png"}
             videoTitleTitle={"Denoise Example     "}
             gitHubLink = {"https://github.com/colincockburn/QU-landlords"}
