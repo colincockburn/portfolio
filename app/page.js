@@ -27,7 +27,7 @@ const Home = () => {
                 <p className='Exo pl-1'> 
                 I am a software developer currently pursuing a computer 
                 science degree with a focus in artificial intelligence at 
-                Queen's University. I recently finished a 16 month work term at Ericsson Ottawa where I contributied to two seperate teams as an Indoor radio Developer and an AI/ML Developer. I expect to graduate in December and am currently looking for work. please find my  
+                Queen's University. I recently finished a 16 month work term at Ericsson Ottawa where I contributied to two seperate teams as an Indoor radio Developer and an AI/ML Developer. I expect to graduate in December and am currently looking for work.
                 </p>
               </div>
             </div>
@@ -42,6 +42,13 @@ const Home = () => {
       {/* projects */}
       <div className='flex flex-col xl:w-4/5  max-w-[1200px]'>
         <Project  
+            title={"Image Denoising Model | PyTorch"}
+            description={"This project was the development of a Convelutional Neural Network which denoises images using a U-Net architecture built with PyTorch. While this is not a niche project on its own, the purpose was to test the compression to performance trade offs of structured/unstructured pruning and quantization-aware-training. The project is currently underway as the compression techniques have not been implemented yet. Currently main structure of the project is complete inclindng the model, training, data loading, and evaluation. On the left you can see a couple visual outputs of the base model in action with a short training window."}
+            photoLink={"/denoise_example_2.png"}
+            videoTitleTitle={"Denoise Example     "}
+            gitHubLink = {"https://github.com/colincockburn/QU-landlords"}
+        />   
+        <Project  
             title={"Depth Map AI | Python, TensorFlow"}
             description={"This AI is a custom-built depth map model overlaid with an existing object classification model named YOLO. The depth map model takes in a 2D image and predicts each pixel's distance from the camera. This was accomplished using a CNN U-Net architecture. The model is trained on two datasets of 3D images and their corresponding 2D images using approximately 8000 indoor images from the DIODE Dataset and 10,000 images from our custom-made dataset. Our custom dataset was created using a RealSense camera to gather image and depth map pairs inside a Vex robotics competition field. The purpose of this project is to apply computer vision capabilities to Vex competition robots. The YOLO model allows the robot to understand what objects are in its field of view, while the depth map model gives it context to how far away the objects are. This can be used to identify and act on game pieces in the field, and gather information about its location within the field. In this demo video you can see it opperating within a bedroom and living room."}
             videoLink={"https://www.youtube.com/embed/LT3b4AtN6-o?si=-v9j311sKAYHZrmS"}
@@ -50,7 +57,7 @@ const Home = () => {
         />
         <Project 
             title={"Host | Unity, C#"}
-            description={"Host is a fast paced 2D platformer currently in development using Unity game engine. the goal of the game is to go from start to finish while overcoming obstacles and enemies stronger than the player. The twist is that you have the ability to take control of the enemies, and use them against each other. The core game mechanics of the game are complete, and the game is currently in the process of being polished and refined. In this demo video, I showcase the mechanics of the game, and the progress I've made so far."}
+            description={"Host is a fast paced 2D platformer video game The goal of the game is to go from start to finish while overcoming obstacles and enemies stronger than the player. The twist is that you have the ability to take control of the enemies, and use them against each other. The core game mechanics of the game are complete, and the game is currently in the process of being polished and refined. In this demo video, I showcase the mechanics of the game, and the progress I've made so far. This project was originally part of a course project, but I have continued working on it since completing the course. All character models and animations were designed my self and free assests were used to build the game world."}
             videoLink={"https://www.youtube.com/embed/S7Hy0AoY2SM?si=8waAf4gv1g0IqNPp"}
             videoTitle={"Host Demo"}
             gitHubLink = {"https://github.com/colincockburn/Host"}
@@ -62,9 +69,16 @@ const Home = () => {
           videoTitle={"Chess Engine Demo"}
           gitHubLink = {"https://github.com/colincockburn/chess-engine"}
         />
+        <Project  
+            title={"Full Stack Webpage - QU Landloards"}
+            description={"QU Landlords is full stack web page which enables Queen's Universty students to post anonymous reviews of their landlords in order to inform future tenents. This application is built using the MERN stack - MongoDB, Express.js, React+tailwind, and Node.js. This was a personal project taken on by myself and my roomate after our disatisfaction with our current landlord left us with no way to effectivly warn our peers from making the same mistake."}
+            photoLink={"/home_page_new.png"}
+            videoTitleTitle={"QU Landlords"}
+            gitHubLink = {"https://github.com/colincockburn/QU-landlords"}
+        />      
           <Project 
           title={"Wordle Calculator | Python, Tkinter"}
-          description={"A python program that takes in a user's guess and coloured result for said guess, and calculates next best options. The calculator sorts possible guesses based on the average information entropy each guess will provide as well as the frequncy of usage in the english language. You can find a demo of the calculator on a few previous wordle games here, and after recreating wordle in python for testing, it scores a average of 3.65 attempts on all 2315 possible games of wordle."}
+          description={"A python program that takes in a user's guess and coloured result for their previous attempt, and calculates next best options. The calculator sorts possible guesses based on the average information entropy each guess will provide as well as the frequncy of usage in the english language. You can find a demo of the calculator on a few previous wordle games here, and after recreating wordle in python for testing, it scores a average of 3.65 attempts on all 2315 possible games of wordle."}
           videoLink={"https://www.youtube.com/embed/OOmZ5D4Vdbo?si=ZurXf8ee1KRASEEF"}
           videoTitle={"Chess Engine Demo"}
           gitHubLink = {"https://github.com/colincockburn/Wordle-solver"}
